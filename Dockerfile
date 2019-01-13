@@ -27,7 +27,7 @@ RUN set -ex; \
 # 	ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget \
 # 	&& rm -rf /var/lib/apt/lists/*
 
-ENV DENO_VERSION v0.2.1
+ENV DENO_VERSION v0.2.6
 RUN set -ex; \
 	mkdir /deno; \
 	wget -qO- "https://github.com/denoland/deno/releases/download/$DENO_VERSION/deno_linux_x64.gz" \
